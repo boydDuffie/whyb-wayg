@@ -20,6 +20,13 @@ const events = [
         'src': undefined, 
         'category': 'school',
     },
+    {
+        'era': 'beginning',
+        'title': 'Failing',
+        'description': 'Having been a straight-A student my entire life, I expected to continue this trend into college. What I don\'t realize at this time is that a lot more goes into educational success than just effort, and everyone here at UF has put in just as much effort as me, if not more.',
+        'src': undefined, 
+        'category': 'school',
+    },
 ];
 
 //do an events.map() function to generate HTML for all the relevant information
@@ -43,6 +50,15 @@ events.map(event => {
     title.className = 'event-title';
     let image = document.createElement('div');
     image.className = 'event-image';
+    if(event['category'] === 'school') {
+        image.style.border = '5px solid var(--teal)';
+    }
+    else if(event['category'] === 'life') {
+        image.style.border = '5px solid var(--orange)';
+    }
+    else if(event['category'] === 'career') {
+        image.style.border = '5px solid var(--lipstick)';
+    }
     let description = document.createElement('p');
     description.className = 'event-description';
     title.textContent = event['title'];
