@@ -1,0 +1,172 @@
+:root {
+  --black: #0d0c0c;
+  --gray: #424d52;
+  --orange: #d96d55;
+  --teal: #2a828c;
+  --clay: #a64951;
+  --lipstick: #f25764;
+  --white: rgb(250, 247, 237);
+  --heading-text: 'Staatliches';
+  --normal-text: 'Lato';
+}
+
+html {
+  background-color: var(--black);
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--gray),
+    var(--lipstick),
+    var(--teal)
+  );
+  min-height: 300vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-bar {
+  display: flex;
+  height: 10vmin;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--black);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 15;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: var(--teal);
+  font-family: var(--heading-text), sans-serif;
+  font-size: 1.5vmax;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0 1em;
+  height: 10vmin;
+}
+
+.nav-link:hover {
+  background-color: var(--white);
+}
+
+.nav-link:hover > a {
+  color: var(--black);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.era {
+  width: 90vw;
+  padding: 15vmin 5vmin 0 5vmin;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed var(--black);
+  padding-bottom: 2em;
+}
+
+.card {
+  width: 40vw;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(250, 247, 237, 0.5);
+  border-radius: 15px;
+  margin-top: 1em;
+}
+
+.card.left {
+  grid-template-areas: 'img title title' 'img desc desc';
+  align-self: flex-start;
+}
+
+.card.right {
+  grid-template-areas: 'title title img' 'desc desc img';
+  align-self: flex-end;
+}
+
+.event-title {
+  grid-area: title;
+  font-family: var(--heading-text), sans-serif;
+  font-size: 3vmax;
+  margin: 0.75em 0.5em;
+}
+
+.event-image {
+  grid-area: img;
+  min-height: 10vw;
+  max-height: 20vmin;
+  min-width: 10vw;
+  max-width: 20vmin;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: black;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-description {
+  grid-area: desc;
+  font-family: var(--normal-text), sans-serif;
+  font-size: 1vmax;
+  margin: 0 1.7em 3em 1.7em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.line {
+  z-index: 10;
+  width: 1vw;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 49.5vw;
+  margin: auto;
+  background-color: var(--black);
+  height: 900vh;
+  border-radius: 9999px;
+}
+
+.era-title {
+  align-self: flex-start;
+  font-family: var(--heading-text), sans-serif;
+  font-size: 5vmax;
+  color: var(--teal);
+  text-shadow: -3px 3px 2px var(--black);
+}
+
+.icon {
+  font-size: 5vw;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.teal {
+  color: var(--teal);
+}
+
+.lipstick {
+  color: var(--lipstick);
+}
