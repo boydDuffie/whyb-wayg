@@ -15,13 +15,13 @@ html {
 }
 
 body {
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     var(--gray),
     var(--lipstick),
-    var(--black)
+    var(--teal)
   );
-  height: 300vh;
+  min-height: 300vh;
 }
 
 ul {
@@ -34,11 +34,12 @@ ul {
   justify-content: flex-start;
   align-items: center;
   background-color: var(--black);
-  box-shadow: 0px 0px 10px 8px var(--black);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0;
   position: fixed;
   width: 100vw;
+  z-index: 15;
 }
 
 .nav-bar a {
@@ -78,6 +79,8 @@ ul {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px dashed var(--black);
+  padding-bottom: 2em;
 }
 
 .card {
@@ -117,6 +120,9 @@ ul {
   border-radius: 50%;
   background-color: black;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .event-description {
@@ -124,4 +130,43 @@ ul {
   font-family: var(--normal-text), sans-serif;
   font-size: 1vmax;
   margin: 0 1.7em 3em 1.7em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.line {
+  z-index: 10;
+  width: 1vw;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 49.5vw;
+  margin: auto;
+  background-color: var(--black);
+  height: 900vh;
+  border-radius: 9999px;
+}
+
+.era-title {
+  align-self: flex-start;
+  font-family: var(--heading-text), sans-serif;
+  font-size: 5vmax;
+  color: var(--teal);
+  text-shadow: -3px 3px 2px var(--black);
+}
+
+.icon {
+  font-size: 5vw;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.teal {
+  color: var(--teal);
+}
+
+.lipstick {
+  color: var(--lipstick);
 }
