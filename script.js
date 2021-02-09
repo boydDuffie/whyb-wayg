@@ -23,7 +23,7 @@ const events = [
     {
         'era': 'beginning',
         'title': 'Becoming A SoundCloud Rapper',
-        'description': 'I begin to listen to rap music more than any other genre, and I decide that it can\'t be that hard to do. I start writing lyrics and formulating a concept for my rapper alter ego, 99ghosts. I keep writing and begin to explore dark, morbid lyrics and aggressive sounds. I discover a new taste in music, and decide to finally record a song. Lo and behold, I lack an ear for production so I recruit a friend who does, and we record a TERRIBLE cringe-worthy song and upload it to SoundCloud (I\'ll spare you the pain of listening to it, but if you wish to seek it out it\'s called \'Waluigi Trap\'). I never record another song but I continue to write more with hopes to someday record something decent.',
+        'description': 'I begin to listen to rap music more than any other genre, and I decide that it can\'t be that hard to do. I start writing lyrics and formulating a concept for my rapper alter ego, 99ghosts. I keep writing and begin to explore dark, morbid lyrics and aggressive sounds. I discover a new taste in music, and decide to finally record a song. Lo and behold, I lack an ear for production so I recruit a friend who does, and we record a TERRIBLE cringe-worthy song and upload it to SoundCloud. I never record another song but I continue to write more with hopes to someday record something decent.',
         'src': 'fab fa-soundcloud', 
         'category': 'life',
     },
